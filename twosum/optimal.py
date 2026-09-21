@@ -1,5 +1,5 @@
 class Solution:
-    from types import list
+    from types import List
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         prevmaps={}
         for i,n in enumerate(nums): # enumerate used as counter 
