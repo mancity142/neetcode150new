@@ -11,7 +11,7 @@ class Solution:
             j=i                           # initilly in same position i,j
             while s[j]!='#':                # here we have the case where the s[j] !='#' then move j=j+1
                 j+=1
-            length=int(s[i:j])              # we require 
-            res.append(s[j+1:j+1+length])
-            i=j+1+length
+            length=int(s[i:j])              # we require to find the length of strimg here when j=# at first then we use this to append the string to the list
+            res.append(s[j+1:j+1+length])    
+            i=j+1+length                     # we increment the starting pointer to next word ie,p in paste
         return res
